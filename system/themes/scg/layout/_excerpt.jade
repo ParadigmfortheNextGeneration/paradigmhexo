@@ -1,0 +1,22 @@
+- // console.log();
+- var rightclass = 'twelve columns'
+- if (post.smallThumb) {
+-   rightclass = 'col l8 m9'
+- }
+
+.excerpt-wrap.row
+  - if (post.smallThumb) {
+  div(class="col l4 m3")
+    a(href="/"+post.path)
+      img(class="lazy", data-src=post.smallThumb)
+  - }
+  div(class=rightclass)
+    h3.post-title.left-align
+      a(href="/"+post.path) #{post.title}
+    time(datetime=date_xml(post.date), itemprop="datePublished")<span class="fa fa-clock-o"></span> <span>#{date(post.date, 'MMMM DD, YYYY')}</span>
+    - if ((post.push_update || post.show_update) == true) {
+    time(class="rounded update white-text deep-orange accent-3" datetime=date_xml(post.updated), itemprop="dateModified")<span>UPDATED</span> <span>#{date(post.updated, 'MMMM DD, YYYY')}</span>
+    - }  
+    - if (post.description) {
+    .description_wrap #{post.description}
+    - }

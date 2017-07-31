@@ -1,0 +1,25 @@
+- // console.log(full_path)
+
+- var hash_tag = ''
+- if (page.hash_tag) {
+- hash_tag = page.hash_tag
+- }
+
+- var fb_onclick = "window.open('http://www.facebook.com/share.php?u="+ full_path +"','facebook','width=450,height=300,left='+(screen.availWidth/2-375)+',top='+(screen.availHeight/2-150)+'');return false;"
+- var fb_href    =  "http://www.facebook.com/share.php?u=" + full_path
+
+- var twitter_onclick = "window.open('https://twitter.com/share?text=" + page.title + " - &amp;url="+full_path+"&amp;via="+theme.twitter+"&amp;hashtags=" + hash_tag + "','twitter','width=450,height=300,left='+(screen.availWidth/2-375)+',top='+(screen.availHeight/2-150)+'');return false;"
+- var twitter_href    = "https://twitter.com/share?text="+page.title+"%20-%20&amp;url="+full_url+"&amp;via="+theme.twitter+"&amp;hashtags=" + hash_tag + "&amp;related="+theme.twitter
+
+- var email_onclick = "window.open('http://api.addthis.com/oexchange/0.8/forward/email/offer?url=" + full_path + "','email','width=480,height=620,left='+(screen.availWidth/2-375)+',top='+(screen.availHeight/2-150)+'');return false;"
+- var email_href    = "http://api.addthis.com/oexchange/0.8/forward/email/offer?url=" + full_path
+
+- var share_title =  "SHARE " + page.title
+
+.share_wrap_outer
+  .share_wrap_inner.center-align
+    a(href=fb_href class="share_item fb_share circle center-align" onclick=fb_onclick target="blank" title=share_title + " to Facebook") <span class="fa fa-facebook"></span>
+    a(href=twitter_href class="share_item twitter_share circle center-align" onclick=twitter_onclick target="blank" title=share_title + " to Twitter") <span class="fa fa-twitter"></span>
+    a(href=email_href class="share_item email_share circle center-align" onclick=email_onclick target="blank" title=share_title + " via Email") <span class="fa fa-envelope"></span>
+    .clearer
+    span(class="share_message") SHARE

@@ -1,0 +1,116 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "share-selected-text",
+        "scope": null,
+        "escapedName": "share-selected-text",
+        "name": "share-selected-text",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "/Users/Pongovi/Sites/scghexo"
+    ]
+  ],
+  "_from": "share-selected-text@latest",
+  "_id": "share-selected-text@1.1.1",
+  "_inCache": true,
+  "_location": "/share-selected-text",
+  "_nodeVersion": "6.8.1",
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/share-selected-text-1.1.1.tgz_1486205366168_0.8305603314656764"
+  },
+  "_npmUser": {
+    "name": "vincentloy",
+    "email": "vincent.loy1@gmail.com"
+  },
+  "_npmVersion": "3.10.8",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "share-selected-text",
+    "scope": null,
+    "escapedName": "share-selected-text",
+    "name": "share-selected-text",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/share-selected-text/-/share-selected-text-1.1.1.tgz",
+  "_shasum": "942df55a2f9eb7549726f840da92be0eca8c77dc",
+  "_shrinkwrap": null,
+  "_spec": "share-selected-text",
+  "_where": "/Users/Pongovi/Sites/scghexo",
+  "author": {
+    "name": "Vincent Loy",
+    "email": "vincent.loy1@gmail.com",
+    "url": "http://vincent-loy.fr"
+  },
+  "bugs": {
+    "url": "https://github.com/VincentLoy/share-selected-text/issues"
+  },
+  "dependencies": {},
+  "description": "share selected text on twitter, buffer, stumbleupon, digg, tumblr & reddit. Inspired by medium.com",
+  "devDependencies": {
+    "babelify": "^6.3.0",
+    "gulp": "^3.9.0",
+    "gulp-asset-manifest": "0.0.6",
+    "gulp-babel": "^5.2.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-less": "^3.0.3",
+    "gulp-plumber": "^1.0.1",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-uglify": "^1.4.1",
+    "less-plugin-autoprefix": "^1.5.1",
+    "less-plugin-clean-css": "^1.5.1"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "942df55a2f9eb7549726f840da92be0eca8c77dc",
+    "tarball": "https://registry.npmjs.org/share-selected-text/-/share-selected-text-1.1.1.tgz"
+  },
+  "gitHead": "66e53c4b909730ad149a36eabeed86d75c4aed0b",
+  "homepage": "http://vincentloy.github.io/share-selected-text",
+  "keywords": [
+    "share",
+    "selection",
+    "medium",
+    "social",
+    "twitter",
+    "stumbleupon",
+    "digg",
+    "tumblr",
+    "reddit",
+    "buffer",
+    "tooltip",
+    "plugin",
+    "jquery",
+    "vanilla"
+  ],
+  "license": "MIT",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/VincentLoy/share-selected-text/blob/master/LICENSE"
+    }
+  ],
+  "maintainers": [
+    {
+      "name": "vincentloy",
+      "email": "vincent.loy1@gmail.com"
+    }
+  ],
+  "name": "share-selected-text",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VincentLoy/share-selected-text.git"
+  },
+  "scripts": {},
+  "version": "1.1.1"
+}

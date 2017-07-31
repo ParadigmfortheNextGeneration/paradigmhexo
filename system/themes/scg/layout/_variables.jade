@@ -1,0 +1,37 @@
+- var full_path = config.url+'/'+page.path
+- var main_classes = "with_title" 
+- if (page.hide_title) {
+- main_classes = "hide_title"
+- }
+
+- if (page.tags) {
+-   var tags = page.tags.length
+-  }
+- var content = ''
+- if (page.content) {
+-  content = htmlInjection(page.content, page.html_injection_items, page.html_injection_disable)
+- }
+
+
+- var content_container_wrapper_class = "container_wrapper"
+- var content_container_class = "container"
+- var content_row_class = "row"
+- var content_class = "col l12"
+- var aside_class   = "col l12"
+
+- if (page.no_container == true) {
+  - content_container_wrapper_class = "no_container_wrapper"
+  - content_container_class = "no_container"
+  - content_row_class = "no_row"
+  - var content_class = "no_column"
+  - var aside_class   = "no_column"
+- }
+
+- if (page.center == true) {
+- content_container_class += ' center-align'
+- } 
+
+- if (page.links && (page.no_container != true)) {
+-   content_class = "col l7 m8"
+-   aside_class =  "col l5 m4"
+- }

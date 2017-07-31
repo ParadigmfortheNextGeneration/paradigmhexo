@@ -1,0 +1,38 @@
+doctype html
+include _variables
+html(lang='en-us')
+  head
+    include _head
+  body(itemscope, itemtype='https://schema.org/WebPage')
+    
+    div(id="html_wrapper") 
+      .header
+        include _header
+      div(class="main "+ main_classes)
+        include _content        
+      .footer.black.white-text
+        include _footer
+        
+        
+      include _browserupgrade.html  
+      include _menu.html
+      include _sidr_social.html
+      
+      - if (page.first_visit && page.cookie_name) {     
+        div(class="modal" id='first_visit_modal', data-cookie-name=page.cookie_name)
+          div(class='modal-content' data-modal-content=page.first_visit)
+      -}
+      
+      script(src='/js/vendor/jquery-1.11.2.min.js')
+      script(src='/js/vendor/jquery.form-defaults.js')
+      script(src='/js/vendor/FitText/jquery.fittext.js')
+      script(src='/js/vendor/materialize.min.js')
+      script(src='/js/vendor/share-selected-text/dist/shareSelectedText.min.js')
+      script(src='/js/vendor/jquery.viewport.mini.js')
+      script(src='/js/vendor/firstvisit/jquery.firstVisitPopupCustom.js')
+      script(src='/js/vendor/jquery.sidr.min.js')
+      script(src='/js/main.js')
+      
+      include _scripts
+    
+    

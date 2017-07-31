@@ -1,0 +1,115 @@
+- if (page.title) {
+- var title = page.title
+- if (page.title_text) {
+  - title = page.title_text
+- }
+- var title = title.replace('-', '<span class="title-divider">-</span>')
+- }
+- if (page.posts) {
+-   var index = page.posts.length
+-   if (page.tag) {
+-     title = "Posts about " + page.tag[0].toUpperCase() + page.tag.substring(1)
+-   }
+- }
+
+- if (!page.hide_title) {
+.full_width_wrap.introduction
+  .container
+    - if (page.title_link) {
+    h1.page-title
+      a(href=page.title_link) !{title}
+    - }
+    - else {
+    h1.page-title !{title}
+    - }
+    
+    - if (!page.hide_description) {
+    .description.center-align !{page.description}
+    - }
+    
+    - if (page.button_link) {
+    - var button_text = "NEXT"
+    - if (page.button_text) {
+    - button_text = page.button_text
+    - }
+    .next_wrap.center-align
+      a(href=page.button_link class="btn deep-orange accent-3 waves-effect waves-yellow") !{button_text}
+    - }
+    
+    
+    - if (page.hide_date == false) {
+      .center-align
+        time(datetime=date_xml(page.date), itemprop="datePublished")<span class="fa fa-clock-o"></span> <span>#{date(page.date, 'MMMM DD, YYYY')}</span>
+        - if ((page.push_update || page.show_update) == true) {
+        time(class="rounded update white-text deep-orange accent-3" datetime=date_xml(page.updated), itemprop="dateModified")<span>UPDATED</span> <span>#{date(page.updated, 'MMMM DD, YYYY')}</span>
+        - }
+    - } 
+- }
+
+
+
+- if(page.featured_image || page.featured_html) {
+  - var featured_outer_class = "featured-outer-container center-align"
+  - var image_inner_class = "image-inner-container"
+  
+  - if (page.enable_parallax) {
+  - featured_outer_class = "parallax-container " + featured_outer_class
+  - image_inner_class = "parallax " + image_inner_class
+  - var parallax_container_styles = '';
+  - if (page.parallax_height) {
+  - parallax_container_styles = 'height: ' + page.parallax_height
+  - featured_outer_class = "config_height " + featured_outer_class
+  - }
+- }
+
+
+  
+  div(class=featured_outer_class style=parallax_container_styles)
+    - if (page.parallax_overlay_image) {
+    img(src="" data-src=page.parallax_overlay_image class="lazy parallax-overlay")
+    - }
+    - if (page.featured_html) {
+    .featured_html.container
+      div(class="injection_html_item injection_html" data-injection-html=page.featured_html)
+    - } 
+    div(class=image_inner_class)
+      img(class="lazy", data-src=page.featured_image, alt=page.title)
+- }
+
+- if (page.video) {
+   - var video = video_url(page.video);
+  .featured_video !{video}
+- }
+
+div(class="full_width_wrap white "+content_container_wrapper_class)
+  .clearer
+  .content
+    div(class=content_container_class)
+      div(class=content_row_class)
+        div(class=content_class)
+          .page-content !{content}
+            - if (index)
+              - page.posts.each(function(post) {
+                  include _excerpt
+              - })
+                 
+        - if (page.links) {
+        div(class=aside_class)
+            include _aside
+        - }
+        
+      - if (tags && page.show_tags && (page.layout == 'post'))
+        .row
+          div(class="tag_wrap col l12")
+            include _widgets/tags
+          
+      - if (page.archive == true) {
+      - var pagination_nav = paginator({prev_text: "&laquo Previous", next_text: "Next &raquo;"})
+        .pagination !{pagination_nav}
+      - }
+    
+- if (!page.after_content_disable) {
+- var after_blocks = after_content(page);
+.full_width_wrap.white !{after_blocks}
+- }
+.clearer      

@@ -1,0 +1,14 @@
+.links-wrap.aside-widget
+  - if (page.links_title) {
+    h2.links-title !{links_title}
+  - }
+    
+ 
+  ul.aside-list
+    - page.links.forEach(function(link){
+    - var item_array = link.split("||")
+    - var item_text = item_array[0]
+    - var item_href = item_array[1]
+        li
+          a(href=item_href) !{item_text} 
+    - });

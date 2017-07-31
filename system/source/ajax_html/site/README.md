@@ -1,0 +1,1 @@
+Items loaded via ajax should have layout:false at the top of the page.

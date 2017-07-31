@@ -1,0 +1,82 @@
+
+- var og_title = page.title ? page.title : config.title
+- var is_section = false
+- if (page.base) {
+  - if (page.base.split('/')[0] == 'section') {
+  -   is_section = true
+  -   page.title = page.category
+  - }
+- }
+
+- var head_title = page.title ? page.title + ' | ' + config.title : config.title
+- // page.category
+- if (page.tags) {
+  - var tagCount = page.tags.length
+  - if(tagCount != 0) {
+    - var tags = [];
+    - for (var i = 0; i < tagCount; i++) {
+       - if (page.tags.data) {
+         - if (page.tags.data[i]['name']) {
+         - var name = page.tags.data[i]['name']
+         - }
+       - }
+       
+       - if (page.tags[i]) {
+       - var name = page.tags[i]
+       - }
+       - if (name) {
+         - tags.push(name)
+       - }
+       
+    - }
+    - tags = tags.join(',')
+  - }
+- }
+
+
+meta(charset='UTF-8')
+meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+
+title=head_title
+meta(property="og:title" content=og_title)
+meta(property="og:site_name" content=config.title)
+meta(property="og:url" content=page.permalink)
+meta(property='og:description', content= page.description ? page.description : config.meta_description)
+meta(property='fb:app_id', content=theme.fb_app_id)
+meta(property='fb:admins', content=theme.fb_admins)
+meta(property='og:type' content='article')
+- if (page.largeThumb) {
+  meta(property='og:image', content=config.url+page.largeThumb)
+  meta(name='twitter:image', content=config.url+page.largeThumb)
+- }
+- else if (page.breaking) {
+  meta(property='og:image', content=config.url+theme.breaking_thumb)
+  meta(name='twitter:image', content=config.url+theme.breaking_thumb)
+- }
+- else {
+  meta(property='og:image', content=config.url+theme.default_thumb)
+  meta(name='twitter:image', content=config.url+theme.default_thumb)
+- }
+
+meta(name='twitter:card', content='summary_large_image')
+meta(name='twitter:site', content= '@'+ theme.twitter)
+meta(name='twitter:title', content=og_title)
+meta(name='twitter:description', content= page.description ? page.description : config.meta_description)
+
+meta(name='description', content= page.description ? page.description : config.meta_description)
+meta(name='generator', content= config.title)
+meta(name='author', content= config.author)
+meta(name='keywords', content=tags ? tags : theme.keywords)
+meta(name='HandheldFriendly', content='True')
+meta(name='MobileOptimized', content='320')
+meta(name='viewport', content='width=device-width,initial-scale=1.0,maximum-scale=1,user-scalable=0')
+
+link(rel='publisher', href=theme.google_plus)
+
+link(rel='icon', href= config.root + 'images/branding/favicon.ico')
+link(rel='stylesheet', type='text/css', href= config.root + 'css/normalize.min.css')
+link(rel='stylesheet', type='text/css', href= config.root + 'css/materializecustom.css')
+link(rel='stylesheet', type='text/css', href= config.root + 'css/font-awesome/css/font-awesome.min.css')
+link(rel='stylesheet', type='text/css', href= config.root + 'css/jquery.sidr.light.min.css')
+link(rel='stylesheet', type='text/css', href= config.root + 'js/vendor/share-selected-text/dist/shareSelectedText.min.css')
+link(rel='stylesheet', type='text/css', href= config.root + 'css/main.css')

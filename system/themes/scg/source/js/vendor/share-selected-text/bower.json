@@ -1,0 +1,37 @@
+{
+  "name": "share-selected-text",
+  "version": "1.0.1",
+  "homepage": "https://github.com/VincentLoy/share-selected-text",
+  "authors": [
+    "VincentLoy <vincent.loy1@gmail.com>"
+  ],
+  "description": "share selected text on twitter, buffer, stumbleupon, digg, tumblr & reddit. Inspired by medium.com",
+  "main": [
+    "dev/shareSelectedText.js"
+  ],
+  "keywords": [
+    "share",
+    "selection",
+    "medium",
+    "social",
+    "twitter",
+    "stumbleupon",
+    "digg",
+    "tumblr",
+    "reddit",
+    "buffer",
+    "tooltip",
+    "plugin",
+    "jquery",
+    "vanilla"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "dev/",
+    ".editorconfig",
+    ".gitignore",
+    ".eslintrc",
+    "gulpfile.js",
+    "package.json"
+  ]
+}

@@ -1,0 +1,17 @@
+## Custom 404 errors
+ErrorDocument 404 /error/404.html
+
+## Prevent viewing of .htaccess file
+<Files .htaccess>
+order allow,deny
+deny from all
+</Files>
+
+## Prevent directory listings
+Options All -Indexes
+
+## Redirects
+Redirect 301 /donate /project/donate
+Redirect 301 /next /project/next
+Redirect 301 /scg_updates http://feedburner.google.com/fb/a/mailverify?uri=Stormcloudsgathering&amp%3Bloc=en_US
+Redirect 301 project/stormcloudsgathering /project/StormCloudsGathering
