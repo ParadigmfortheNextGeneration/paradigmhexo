@@ -27,6 +27,7 @@ permalink_defaults:
 
 # footer_parallax: http://res.cloudinary.com/scg/image/upload/v1489160472/headers/Footer-background.jpg
 after_content:
+  - /_html/site/iterative.html
   - /_html/site/donate.html
   
 #html_injection_items:
@@ -217,7 +218,7 @@ restful:
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://pixelclever@bitbucket.org/pixelclever/scg_hexo_deploy.git
+  repo: https://github.com/ParadigmfortheNextGeneration/paradigmdeploy.git
   branch: master
   message: 'Deploy commit'
   

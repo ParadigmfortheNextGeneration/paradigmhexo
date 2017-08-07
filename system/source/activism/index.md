@@ -28,9 +28,9 @@ custom_json_files:
 ---
 * **[Local Activism](/activism/local)**
 * **[Digital Activism](/activism/digital)**
+* **[Volunteer](/activism/volunteer)**
 * **[Downloads](/activism/downloads)**
-* **[Contact Guidelines](/activism/contact-guidelines)**
-* **[Volunteer](/volunteer)**
+* **[Representing The Positive](/activism/representing-the-positive)**
 
 Activism begins with a commitment to speak out on one or more issues consistently. To maximize our effectiveness, psychology and identity must be taken into account.
 

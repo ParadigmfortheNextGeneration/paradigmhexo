@@ -100,7 +100,10 @@ var initializeEvents = function() {
     }
     
     var lazy_image_call = function(item) {
-      $(item).hide().attr("src", $(item).attr("data-src")).fadeIn(500).removeClass("lazy");
+      if ($(item).attr("data-src")) {
+        var src = $(item).attr("data-src"); 
+        $(item).hide().attr("src", src).fadeIn(500).removeClass("lazy");
+      }
       if ($(item).parent().hasClass('parallax')) {
         parallax_load($(item).parent());
       }
@@ -128,6 +131,8 @@ var initializeEvents = function() {
         lazy_image_call(this);
     });
     
+     
+    
     $('.injection_html:in-viewport').each(function(){
        injection_html_call(this);
     });
@@ -136,7 +141,7 @@ var initializeEvents = function() {
       twitter_load(this);
     });
     
-    $(window).bind("scroll", function(event) {
+    $(window).bind("scroll", function(event) {     
         $(".lazy:in-viewport").each(function() {
             lazy_image_call(this);
         });
@@ -153,8 +158,6 @@ var initializeEvents = function() {
           fb_load(this);
         });
     });
-    
-   
     
     // Load javascript for social media subscribe buttons asynchronously.
     // We should make this so that the code is only added once (done for facebook)

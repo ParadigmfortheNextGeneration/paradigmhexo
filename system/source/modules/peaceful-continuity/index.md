@@ -28,7 +28,7 @@ custom_json_files:
 ---
 * **Consensus Building** - Always seek the win/win, and avoid unnecessary conflicts.
 * **Non-aggression** - Never initiate violence.
-* **Conflict Resolution** - Develop the skills needed to calm tempers and deescalate tensions.
+* **Conflict Resolution** - Develop the skills needed to calm tempers and de-escalate tensions.
 
 The ability to maintain peace and security within a group, and in relation to neighboring groups is vital. This duty is, and has always been our responsibility. However for generations we have outsourced these functions to other groups of humans, often thousands of miles away, who claim the monopoly on violence, money and truth within a given region. As the current system weakens, this responsibility must be picked up again on a community level. The transition must be guided by principle.
 

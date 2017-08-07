@@ -26,6 +26,6 @@ cookie_name:
 custom_js_files:
 custom_json_files:
 ---
-Applied to human culture, a tribe is a [modular component](/modules/modularity). Historically speaking, tribes are by far the most stable, and durable socio-economic configuration ever tested.
+Applied to human culture, a tribe is a [modular component](/modules/modularity). Tribes are by far the most stable, and durable socio-economic configuration for our species (this assertion can be confirmed by a cursory examination of history and anthropology).
 
 The tribal model can be extended to a larger scale through federations. In this context we can think of federations as modular systems. Example: the Iroquois Confederacy.

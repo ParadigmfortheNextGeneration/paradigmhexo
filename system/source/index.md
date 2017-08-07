@@ -1,21 +1,40 @@
 ---
 title: Paradigm for the Next Generation
-hide_title: true
+hide_title: false
 hide_date: true
-# video: https://www.youtube.com/watch?v=1MmfCX2H7N8
 description: The next generation needs paradigm and code of identity that bind with a sense of purpose, community, and mission; an idea and a feeling that transcend superficial characteristics (like skin color, gender and orientation). 
 hide_description: true
 html_injection_disable: true
 center: false
-no_container: false
+no_container: true
 ---
-The next generation needs a paradigm and code of identity that bind with a sense of purpose, community, and mission; an idea and a feeling that transcend superficial characteristics (like skin color, gender and orientation). 
+<div class="row grey darken-4 white-text pad-vertical no-margin">
+<div class="col s12 m6">
+https://www.youtube.com/watch?v=VaWNQjFtGD0
+</div>
+<div class="col s12 m6">
+<h3 class="deep-orange-text text-accent-3"><a href="/content/the-tribal-identity">The Tribal Identity</a></h3>
+The next generation needs a paradigm and a code of identity that bind with a sense of purpose, community, and mission; an idea and a feeling that transcend superficial characteristics (like skin color, gender and orientation). <br />
+[MORE **+**](/content/the-tribal-identity)
+</div>
+</div>
+<div class="row blue darken-3 white-text pad-vertical center-align">
 
-This vision must resonate, and inspire action; action towards concrete goals, minimal starting points that provide immediate and tangible benefits. 
 
-The code must be synchronized with reality. It must adapt to logic and evidence (the scientific method applied to the way humans learn, organize and live).
+<div class="col s12 m6 l3">
+<a href="/modules/local-resilience"><img src="/images/thumbs/local-resilience.jpg" /></a>
+</div>
 
-The code must be open source. It must be simple, modular (meme level), and compatible with a broad spectrum of existing ideologies. It must work with (rather than against) our instinctual psychology. It must be adapted to human biochemistry. 
+<div class="col s12 m6 l3">
+<a href="/modules/peaceful-continutity"><img src="/images/thumbs/peaceful-continuity.jpg" /></a>
+</div>
 
-We don't have time to reinvent the wheel. 
-We must learn from the lessons of history, and the innovations of the modern age. Take the best of the old and the new. Integrate what works and discard what doesn't.
+<div class="col s12 m6 l3">
+<a href="/modules/adaptive-action"><img src="/images/thumbs/adaptive-action.jpg" /></a>
+</div>
+
+<div class="col s12 m6 l3">
+<a href="/modules/modularity"><img src="/images/thumbs/modularity.jpg" /></a>
+</div>
+
+</div>

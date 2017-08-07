@@ -31,7 +31,7 @@ custom_json_files:
 Modern humans are completely dependent on the flow of goods and resources from afar. Transport, manufacturing, agriculture, and medicine are all tied to fossil fuels.
 Cities and highways are designed with automobiles in mind. Food production, industry and office complexes moved farther and farther away from suburban sprawl. And all of it at the mercy of a debt based monetary system whose ebbs and flows we do not control, a system predicated on infinite growth on a finite planet.  
 
-Local resilience is a [modular component](/modules/modularity) (meme). This meme contains an implied replication imperative (the urgency to transition off of a dying system).
+Local resilience is a [modular component](/modules/modularity) (meme). This meme contains a replication imperative (the urgency to transition off of a dying system).
 
 ## Submodules
 

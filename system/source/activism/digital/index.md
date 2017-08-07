@@ -37,4 +37,4 @@ There are an infinite number of ways to spread ideas online. The following list 
 * Create or join online discussion groups oriented towards compatible topics, and participate strategically.
 * Troll for Truth: Work in teams to counter ideas online in coordinated bursts.
 
- If you are interested in helping coordinate online activists, or if you have technical skills (such as programming) which you are willing to contribute, apply to [volunteer](/volunteer) onsite or online.
+ If you are interested in helping coordinate online activists, or if you have technical skills (such as programming) which you are willing to contribute, apply to [volunteer](/activism/volunteer) onsite or online.

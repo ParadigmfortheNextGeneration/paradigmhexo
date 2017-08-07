@@ -26,6 +26,5 @@ cookie_name:
 custom_js_files:
 custom_json_files:
 ---
-* **[Local Resilience Starter Kit]()**
-* **[Digital Activism Starter Kit]()**
-* **[Graphics for Activism]()**
+* **[Local Resilience Starter Kit 0.1](https://drive.google.com/open?id=0B_xGZLnC7JjXTkt0d29MMV8wQWc)**
+* **[Graphics for Activism 0.1](https://drive.google.com/open?id=0B_xGZLnC7JjXZURGbVlscWd2WHc)**

@@ -26,4 +26,6 @@ cookie_name:
 custom_js_files:
 custom_json_files:
 ---
-Memes are ideological [modules](/modules/modularity). It is much easier to add, subtract or alter an individual meme than to directly restructure an entire belief system. Therefore in the context of activism, our efforts must be focused on the transmission of compatible memes, without getting hung up on ideas that some may not be ready to integrate.
+Memes (small, stable clusters of ideas) are ideological [modules](/modules/modularity). 
+
+It is much easier to add, subtract or alter an individual meme than to directly restructure an entire belief system. Therefore in the context of activism, our efforts must be focused on the transmission of compatible (yet transformative) memes, and must avoid wasting time and energy on wedge issues.

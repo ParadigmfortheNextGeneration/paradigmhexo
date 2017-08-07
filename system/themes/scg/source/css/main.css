@@ -46,13 +46,13 @@ body {
 }
 .main {
   position: relative;
-  margin-top:120px;
+  margin-top:130px;
   font-family: "Nice Serif" ,Cambria,"Times New Roman",Times,serif;
   line-height: 1.5em;
   font-size:21px;
 }
 .main.with_title {
-  margin-top:120px;
+  margin-top:150px;
 }
 .full_width_wrap {
   background: #000;
@@ -92,6 +92,12 @@ ol li {counter-increment: li}
   margin-bottom: 20px;
   font-size: 17px;
   line-height: 1.2em;
+}
+.pad-vertical {
+  padding:30px 0;
+}
+.no-margin {
+  margin:0;
 }
 /*.row {
   margin-bottom:0;
@@ -376,6 +382,7 @@ h3.post-title {
 .content h3.post-title a {
     color:#000;
 }
+
 #logo {
   float:left;
   margin-left:10px;
@@ -403,17 +410,18 @@ h3.post-title {
 .panel h1 a,
 .panel h2 a,
 .panel h3 a,
-.panel h4 a {
+.panel h4 a / {
   color:#000 !important;
 }
 .white-text h1 a,
 .white-text h2 a,
 .white-text h3 a,
 .white-text h4 a {
-  -webkit-text-stroke: 1px black;
    color: #fff !important;
-   text-shadow: #4caf50 0px 0px 3px;
    -webkit-font-smoothing: antialiased;
+}
+.grey h3 a {
+  color:#ff3d00 !important;
 }
 .panel h1 a strong,
 .panel h2 a strong,
@@ -556,7 +564,7 @@ h3.post-title {
   margin-top:23px;
 }
 a#menu_button {
-  color:#4caf50;
+  color:#039be5;
 }
 a#menu_button .fa {
   font-size:30px;
@@ -611,6 +619,9 @@ ul.menu-large li a {
 .sidr_wrap {
   clear:both;
 }
+.sidr ul {
+  margin:5px 0;
+}
 #sidr_menu li {
   list-style: none;
 }
@@ -657,10 +668,9 @@ ul.menu-large li a {
   text-decoration: underline;
   color:#ff3d00;
 }
-.menu-inner .next {display: none;}
 
 .menu-inner {
-  padding:20px;
+  padding:0px 20px;
 }
 .social-inner {
   padding:20px;
@@ -934,6 +944,7 @@ ul.tag-list {
 }  
 .page-content img {
   margin:10px 0;
+  max-width: 100%;
 }
 .page-content .col img {
   margin:0 0 20px 0;
@@ -996,6 +1007,15 @@ ul.tag-list {
   }
 }
 
+@media (max-width: 930px) {
+  .menu-large {
+    display:none;
+  }
+  #menu_button {
+    display:block;
+  }
+}
+
 @media (max-width: 750px) {
   ul.aside-list li a:link, ul.aside-list li a:visited {
     font-size: 18px;
@@ -1005,14 +1025,6 @@ ul.tag-list {
   }
   .page-content h2 {
     font-size: 28px;
-  }
-}
-@media (max-width: 805px) {
-  .menu-large {
-    display:none;
-  }
-  #menu_button {
-    display:block;
   }
 }
 
@@ -1025,12 +1037,21 @@ ul.tag-list {
   }
 }
 
+@media screen and (max-width: 600px) {
+  .donate-block .btn {
+    margin: 0 auto;
+    display:block;
+  }
+  .donate-block h3 {
+    text-align: center;
+  }
+}
+
 @media screen and (max-width: 566px) {
   /*h1, h2, h3, h4, h5, h6 {
     word-spacing: -0.1em;
   }*/
 }
-
 
 @media screen and (max-width: 560px) {
   .donate {

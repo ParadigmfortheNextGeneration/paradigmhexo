@@ -26,8 +26,8 @@ cookie_name:
 custom_js_files:
 custom_json_files:
 ---
-Narratives are stories that connect [memes](/modules/modularity/memes-as-modules) (small, stable clusters of ideas), to form meme systems (ideologies). 
+Narratives are stories that connect [memes](/modules/modularity/memes-as-modules) (small, stable clusters of ideas), to form meme systems. 
 
 Meme systems which define one's place in the world combine to form [identity](/modules/tribal-identity).
 
-Cultural narratives define identity and world view by dictating which ideas are receive focus and respect, and which are are mocked or ignored. 
+Cultural narratives define identity and world view by dictating which ideas receive focus and respect, and which are mocked or ignored. 

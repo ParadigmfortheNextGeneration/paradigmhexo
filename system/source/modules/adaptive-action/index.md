@@ -29,6 +29,6 @@ custom_json_files:
 Adaptive project management (aka iterative, non-linear, or agile) is an approach which focuses on releasing a simple, functional product in a short time frame, testing, then making incremental improvements based on feedback.
 
 * **Define the Abstract Goal** - Define what the product needs to accomplish in the broadest sense.
-* **Prioritize** - Define the most important/urgent goals
-*  **Choose a short term deliverable** - Build a minimal first version
-* **Test and reassess** - Use feedback/results to guide next iteration 
+* **Prioritize** - Define the most important/urgent goals.
+*  **Choose a short term deliverable** - Build a minimal first version.
+* **Test and reassess** - Use feedback/results to guide next iteration.

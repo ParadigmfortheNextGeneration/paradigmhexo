@@ -2,5 +2,6 @@
 <!-- Komodo Project File - DO NOT EDIT -->
 <project id="05301010-da9d-a14a-9923-7f211ad61751" kpf_version="5" name="paradigmnext.komodoproject">
 <preference-set idref="05301010-da9d-a14a-9923-7f211ad61751" id="project" preftype="project">
+  <long id="prefs_version">1</long>
 </preference-set>
 </project>

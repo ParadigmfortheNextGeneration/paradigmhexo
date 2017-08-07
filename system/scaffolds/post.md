@@ -6,7 +6,7 @@ date: {{ date }}
 hide_date: false
 push_update: false
 show_update: false
-permalink: ""
+permalink: content/:title/
 tags: []
 category: []
 hash_tag: ""
